@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <style>
+        @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@1,300&display=swap');
+        </style> -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;800&family=Rubik:ital,wght@1,300&family=Sarabun:ital,wght@1,400;1,500&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/7564b3c794.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="body">
+        <ul class="main">
+            <li id="container1">
+                
+                <ul class="nav">
+                    <li class="up">
+                        <p class="dropdown"><i class="fa-solid fa-circle-chevron-down"></i></p>
+                        <p class="bar"><i class="fa-solid fa-bars"></i></p>
+                    </li>
+                    <li class="middle">
+                        <h5 id="masterSongName">Song Name</h5>
+                        <p class="like"><i class="fa-solid fa-heart"></i></p>
+                    </li>
+                    <li class="range">
+                        <!-- <audio  id="song">
+                        <source src="namo.mpeg" type="audio/mpeg">
+                        </audio> -->
+                        <input type="range" name="range"  value="0"  id="progress">
+                    </li>
+                    <li class="down">
+                        <p class="back"><i id="previous"  class="fa-solid fa-backward-step"></i></p>
+                        <!-- <p class="play"  onclick="playPause()"><i class="fa-solid fa-play" id="ctrlicon"></i></p> -->
+                        <p class="play"><i class="fa-solid fa-play" id="ctrlicon"></i></p>
+                        <p class="forward"><i id="next"   class="fa-solid fa-forward-step"></i></p>
+                    </li>
+                </ul>
+        >   </li>
+            <li class="container2">
+                <h1 class="heading">Good Evening</h1>
+                <ul class="playlist">
+                    <li class="playlisthead">
+                        
+                    </li>
+                    <li>
+                        <div>
+                           <ul class="songitem"> 
+                            <li class="a">
+                            <span>1</span>
+                            <img src="0.jpg" alt="" class="img">
+                            </li>
+                            <li class="b">
+                            <span class="songname">Namo Namo</span>
+                            <span class="singer">Amit Trivedi</span>
+                            <p class="play"><i id="0" class="fa-solid songItemPlay fa-play"></i>5:28</p>
+                            </li>
+                            </ul>  
+                        </div>
+                        <div >
+                            <ul class="songitem"> 
+                             <li class="a">
+                             <span>2</span>
+                             <img src="1.jpg" alt="" class="img">
+                             </li>
+                             <li class="b">
+                             <span class="songname">Thunder</span>
+                             <span class="singer">Imagine Dragons</span>
+                             <span><i id="1" class="fa-solid songItemPlay fa-play"></i>3:24</span>
+                             </li>
+                             </ul>  
+                         </div>
+                         <div >
+                            <ul class="songitem"> 
+                             <li class="a">
+                             <span>3</span>
+                             <img src="2.jpg" alt="" class="img">
+                             </li>
+                             <li class="b">
+                             <span class="songname">Maan Meri Jaan</span>
+                             <span class="singer">King</span>
+                             <span><i id="2" class="fa-solid songItemPlay fa-play"></i>3:14</span>
+                             </li>
+                             </ul>  
+                         </div>
+                         <div >
+                            <ul class="songitem"> 
+                             <li class="a">
+                             <span>4</span>
+                             <img src="3.jpg" alt="" class="img">
+                             </li>
+                             <li class="b">
+                             <span class="songname">Who Din</span>
+                             <span class="singer">Arijit Singh</span>
+                             <span><i id="3" class="fa-solid songItemPlay fa-play"></i>5:11</span>
+                             </li>
+                             </ul>  
+                         </div>
+                         <div >
+                            <ul class="songitem"> 
+                             <li class="a">
+                             <span>5</span>
+                             <img src="4.jpg" alt="" class="img">
+                             </li>
+                             <li class="b">
+                             <span class="songname">Gulabi Ankhen</span>
+                             <span class="singer">Sanam</span>
+                             <span><i id="4" class="fa-solid songItemPlay fa-play"></i>3:17</span>
+                             </li>
+                             </ul>  
+                         </div>
+                         <div >
+                            <ul class="songitem"> 
+                             <li class="a">
+                             <span>6</span>
+                             <img src="5.jpg" alt="" class="img">
+                             </li>
+                             <li class="b">
+                             <span class="songname">Excuses</span>
+                             <span class="singer">A.P. Dhillon</span>
+                             <span><i id="5" class="fa-solid songItemPlay fa-play"></i>2:56</span>
+                             </li>
+                             </ul>  
+                         </div>
+                         <div >
+                            <ul class="songitem1"> 
+                             <li class="a">
+                             <span>7</span>
+                             <img src="6.jpg" alt="">
+                             </li>
+                             <li class="b">
+                             <span class="songname">Raatain</span>
+                             <span class="singer">Jubin Nautiyal</span>
+                             <span><i id="6" class="fa-solid songItemPlay fa-play"></i>3:50</span>
+                             </li>
+                             </ul>  
+                         </div>
+                       
+                         <div class="bottombar">
+                            <ul class="songitem2"> 
+                                <li class="a">
+                                <img src="back.jpeg" alt="" class="img" id="image">
+                                </li>
+                                <ul class="b1">
+                                    
+                                <span id="songname">Song</span>
+                                <span id="singer">none</span>
+                                <div>
+                                    <span class="icon">
+                                    <i class="fa-solid previous fa-backward-step" id="previou" ></i>
+                                    <i class="fa-solid fa-play" id="ctrlico"></i>
+                                    <i class="fa-solid next fa-forward-step" id="nex"></i>
+                                </span>
+                                </div>
+                                        <input type="range" name="range" min="0" max="100" value="0"  id="progress2">
+                                    </ul>
+                              
+                            </ul>  
+                        </div>
+                    </li>   
+                  
+                </ul>
+               
+            </li>
+            
+        </ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
